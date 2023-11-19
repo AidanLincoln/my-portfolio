@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Description from './components/Description';
 import AnimatedLogo from './components/AnimatedLogo';
 import React, { useEffect, useState } from "react";
+import Socials from './components/Socials';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 2500);
+        }, 2300);
     }, []);
 
   return (
@@ -20,13 +21,10 @@ function App() {
             <main>
                 <Navbar/>
                 <Description/>
+                <Socials/>
             </main>
           )
-        }
-
-      
-    
-      
+        }    
     </div>
   );
 }

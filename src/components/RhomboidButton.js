@@ -3,6 +3,8 @@ export default function RhomboidButton(props){
     //action (onclick)
     //text (button text)
     return(
-        <button className="rhomboidBtn" onClick={props.action}><div className="rhomboidBtnText">{props.text}</div></button>
+        <button className="rhomboidBtn" onClick={props.action}>
+            <div className="rhomboidBtnText">{props.text}</div>
+        </button>
     );
 }

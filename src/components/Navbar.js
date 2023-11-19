@@ -1,6 +1,6 @@
 import RhomboidButton from "./RhomboidButton";
 import Anime from 'react-anime';
-import Logo from "./logo";
+import Logo from "./Logo";
 
 export default function Navbar() {
     return(
