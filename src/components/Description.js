@@ -2,7 +2,7 @@ import Anime from 'react-anime';
 
 export default function Description() {
     return(
-        <Anime translateY={[20,0]} opacity={[0,1]} easing={"easeInSine"} duration={500} delay={1000} >
+        <Anime translateY={[20,0]} opacity={[0,1]} easing={"easeInSine"} duration={500} delay={0} >
             <div className="descriptionContainer">           
                 <div className="descriptionText1">Hi, my name is</div>
                 <div className="descriptionText2">Aidan Lincoln.</div>

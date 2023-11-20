@@ -4,6 +4,7 @@ import Description from './components/Description';
 import AnimatedLogo from './components/AnimatedLogo';
 import React, { useEffect, useState } from "react";
 import Socials from './components/Socials';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 
 function App() {
@@ -11,19 +12,22 @@ function App() {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
+            console.log("setLoading -> false")
         }, 2300);
     }, []);
 
   return (
     <div className='App'>
        {loading ? (<AnimatedLogo/>) :
-          (
-            <main>
-                <Navbar/>
-                <Description/>
-                <Socials/>
-            </main>
-          )
+          <Router>
+            <Navbar/>
+            <Socials/>
+            <Routes>
+              <Route path="/" element={<Description/>}/> 
+              <Route path="/about" element={<div>hello</div>} />
+          
+            </Routes>
+          </Router>      
         }    
     </div>
   );

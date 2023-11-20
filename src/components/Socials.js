@@ -1,9 +1,8 @@
 import Anime from 'react-anime';
-import RhomboidButton from "./RhomboidButton";
 
 export default function Socials(){
     return(
-        <Anime>
+        <Anime opacity={[0,1]} easing={"easeInSine"} duration={300} delay={1000}>
             <div className='socialsContainer'>
                 <ul className='socialsUL'>
                     <li className='socialsLI'>    
@@ -17,7 +16,7 @@ export default function Socials(){
                         </a>
                     </li>   
                     <li className='socialsLI'>
-                        <a>
+                        <a href="mailto:aidantlincoln@gmail.com">
                             <img src={require("../assets/email-icon.png")} className="socialIcon" alt="emailIcon"></img>      
                         </a>
                     </li>   
