@@ -12,7 +12,6 @@ function App() {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-            console.log("setLoading -> false")
         }, 2300);
     }, []);
 
@@ -20,14 +19,15 @@ function App() {
     <div className='App'>
        {loading ? (<AnimatedLogo/>) :
           <Router>
-            <Navbar/>
+            {/* NAVBAR CAUSING FLICKERING SOMETIMES? IM GOING TO GO CRAZY. RELOADING APP OVER AND OVER SHOWS THIS ISSUE */}
+            <Navbar/> 
             <Socials/>
             <Routes>
               <Route path="/" element={<Description/>}/> 
               <Route path="/about" element={<div>hello</div>} />
           
             </Routes>
-          </Router>      
+          </Router>    
         }    
     </div>
   );
