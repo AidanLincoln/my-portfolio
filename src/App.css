@@ -148,3 +148,39 @@ html, body {
   transform: translate(0, -3px);
 }
 
+.aboutcontainer {
+
+}
+.aboutTitle {
+  font-size: 5em;
+  font-weight: 800;
+  color: #d4faff;
+}
+.aboutText {
+  font-size: 1.7em;
+  font-weight: 200;
+  color: #a4d8dc;
+}
+
+.contactContainer {
+  
+}
+.contactTitle {
+  font-size: 5em;
+  font-weight: 800;
+  color: #d4faff;
+}
+.contactText {
+  font-size: 1.7em;
+  font-weight: 200;
+  color: #a4d8dc;
+}
+
+.projectsContainer {
+
+}
+.projectsTitle {
+  font-size: 5em;
+  font-weight: 800;
+  color: #d4faff;
+}
