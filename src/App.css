@@ -1,10 +1,18 @@
 html, body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
   background-color: #131313;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.2em;
+}
+
+.componentContainer {
+  margin-left:auto;
+  margin-right:auto;
+  width:40%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 /* NAVBAR */
@@ -14,6 +22,10 @@ html, body {
   color: white;
   font-weight: 300;
   margin-right: 35px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .navTitle {
   margin-right: auto;
@@ -67,36 +79,6 @@ html, body {
   transition: all 0.5s ease;
 }
 
-/* HOME PAGE DESCRIPTION */
-.descriptionContainer {
-  margin-left:auto;
-  margin-right:auto;
-  margin-top: 12%;
-  width:40%;
-}
-.descriptionText1 {
-  font-size: 1.7em;
-  font-weight: 200;
-  color: #00e0ff;
-  margin-bottom: 4%;
-}
-.descriptionText2 {
-  font-size: 5em;
-  font-weight: 800;
-  color: #d4faff;
-}
-.descriptionText3 {
-  font-size: 5em;
-  font-weight: 800;
-  color: #95b1b4;
-}
-.descriptionText4 {
-  font-size: 1.7em;
-  font-weight: 200;
-  color: #a4d8dc;
-  margin-top: 4%;
-}
-
 /* LOGO */
 .logo {
   height: 40px;
@@ -126,17 +108,19 @@ html, body {
 
 /* SOCIALS */
 .socialsContainer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 .socialsUL {
   all: unset;
   list-style: none;
 }
 .socialsLI {
-  margin-bottom: 20px;
+  padding-top: 20px;
+  /* margin-bottom: 30px; */
 }
 .socialIcon {
   height: 40px;
@@ -148,39 +132,29 @@ html, body {
   transform: translate(0, -3px);
 }
 
-.aboutcontainer {
-
+/* TEXT STYLES */
+.smallTextCyan {
+  font-size: 1.7em;
+  font-weight: 200;
+  color: #00e0ff;
 }
-.aboutTitle {
-  font-size: 5em;
-  font-weight: 800;
-  color: #d4faff;
-}
-.aboutText {
+.smallTextLight {
   font-size: 1.7em;
   font-weight: 200;
   color: #a4d8dc;
 }
-
-.contactContainer {
-  
+.mediumTextLight {
+  font-size: 3em;
+  font-weight: 800;
+  color: #d4faff;
 }
-.contactTitle {
+.largeTextLight {
   font-size: 5em;
   font-weight: 800;
   color: #d4faff;
 }
-.contactText {
-  font-size: 1.7em;
-  font-weight: 200;
-  color: #a4d8dc;
-}
-
-.projectsContainer {
-
-}
-.projectsTitle {
+.largeTextGrey {
   font-size: 5em;
   font-weight: 800;
-  color: #d4faff;
+  color: #95b1b4;
 }

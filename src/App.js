@@ -4,8 +4,9 @@ import Description from './components/Description';
 import AnimatedLogo from './components/AnimatedLogo';
 import React, { useEffect, useState } from "react";
 import Socials from './components/Socials';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -18,16 +19,14 @@ function App() {
   return (
     <div className='App'>
        {loading ? (<AnimatedLogo/>) :
-          <Router>
-            {/* NAVBAR CAUSING FLICKERING SOMETIMES? IM GOING TO GO CRAZY. RELOADING APP OVER AND OVER SHOWS THIS ISSUE */}
+          <main>
             <Navbar/> 
             <Socials/>
-            <Routes>
-              <Route path="/" element={<Description/>}/> 
-              <Route path="/about" element={<div>hello</div>} />
-          
-            </Routes>
-          </Router>    
+            <Description/>
+            <About/>
+            <Projects/>
+            <Contact/>
+          </main>
         }    
     </div>
   );
