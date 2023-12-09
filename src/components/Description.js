@@ -2,7 +2,7 @@ import Anime from 'react-anime';
 
 export default function Description() {
     return(
-        <div className="componentContainer" id="descriptionComponent">
+        <div className="bigComponentContainer" id="descriptionComponent">
             <div>
                 <Anime translateY={[10,0]} opacity={[0,1]} easing={"easeInSine"} duration={300} delay={800} >           
                     <div className="smallTextCyan" style={{marginBottom: "4%"}}>Hi, my name is</div>
