@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import React, { useEffect, useState } from "react";
+import RevealOnScroll from './components/RevealOnScroll';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -23,11 +24,23 @@ function App() {
        {loading ? (<AnimatedLogo/>) :
           <main>         
                 <Navbar/> 
+
                 <Socials/>
+
                 <Description/>
-                <About/>
-                <Projects/>
-                <Contact/>
+
+                <RevealOnScroll>
+                  <About/>
+                </RevealOnScroll>
+
+                <RevealOnScroll>
+                  <Projects/>
+                </RevealOnScroll>
+
+                <RevealOnScroll>
+                  <Contact/>
+                </RevealOnScroll>
+
                 <Footer/>
           </main>
         }    
